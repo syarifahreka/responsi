@@ -1,0 +1,243 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: Courier;
+    color: #388087;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: solid;
+    color: #fff;
+    background-color: #388087;
+}
+
+.slide {
+    max-width: auto;
+    height: 690px;
+    position: relative;
+}
+.slide1, .slide2, .slide3 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.slide1 {
+    background: url(gambar/1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+}
+
+.slide2 {
+    background: url(gambar/2.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+
+.slide3 {
+    background: url(gambar/3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+
+@keyframes fade{
+    0%{opacity: 1;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes fade2{
+    0%{opacity: 0;}
+    33.333%{opacity: 1;}
+    66.666%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes fade3{
+    0%{opacity: 0;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #6FB3B8;
+}
+
+a.tombol1{
+    background-color:  #388087;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tombol1:hover{
+    background: #BADFE7;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 22);
+    transition: -4s;
+    background: #6FB3B8;
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    transform: translate(0px, -8px);
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.content p {
+    text-align: center;
+    color: #000;
+    padding-top: 0 8px;
+}
+
+h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #F6F6F2;
+    margin: 0;
+}
+
+.content button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.content .buy-1{
+    background: #c2edce;
+    color: #000;
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 45px;
+    }
+}
+
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+
+.about {
+	width: 600px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+.about img {
+	float: right;
+	margin: 5px;
+}
